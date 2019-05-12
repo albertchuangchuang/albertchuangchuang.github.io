@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Blog // My New Hugo Site</title>
+
+        <meta charset="utf-8">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+        <meta property="og:title" content="Blog" />
+    <meta property="og:description" content="" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:url" content="https://albertchuangchuang.github.io/post/blog/" />
+    
+
+    <link href="" rel="alternate" type="application/rss+xml" title="My New Hugo Site" />
+    <link rel="shortcut icon" href="/favicon.png">
+
+    <link href="https://albertchuangchuang.github.io/webfonts/ptserif/main.css" rel='stylesheet' type='text/css'>
+    <link href="https://albertchuangchuang.github.io/webfonts/source-code-pro/main.css" rel="stylesheet" type="text/css">
+
+    <link rel="stylesheet" href="https://albertchuangchuang.github.io/css/style.css">
+
+    <meta name="generator" content="Hugo 0.55.5" />
+</head>
+
+
+<body>
+<div id="container">
+    <header id="header">
+    <div id="header-outer" class="outer">
+        <div id="header-inner" class="inner">
+            <a id="main-nav-toggle" class="nav-icon" href="javascript:;"></a>
+            <a id="logo" class="logo-text" href="https://albertchuangchuang.github.io">My New Hugo Site</a>
+            <nav id="main-nav">
+                
+            </nav>
+            <nav id="sub-nav">
+                <div id="search-form-wrap">
+                </div>
+            </nav>
+        </div>
+    </div>
+</header>
+
+    <section id="main" class="outer">
+        <article class="article article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+        <header class="article-header">
+            <h1 class="article-title" itemprop="name">Blog</h1>
+        </header>
+        
+        <div class="article-meta">
+            <a href="/post/blog/" class="article-date">
+                <time datetime='2019-05-12T15:53:54.000&#43;08:00' itemprop="datePublished">2019-05-12</time>
+            </a>
+            
+            
+            
+        </div>
+        <div class="article-entry" itemprop="articleBody">
+            
+
+<h1 id="demo">DEMO</h1>
+
+<p>###########环境依赖
+node v0.10.28+
+reids ~</p>
+
+<p>###########部署步骤
+1. 添加系统环境变量
+    export $PORTAL_VERSION=&ldquo;production&rdquo; // production, test, dev</p>
+
+<ol>
+<li><p>npm install  //安装node运行环境</p></li>
+
+<li><p>gulp build   //前端编译</p></li>
+
+<li><p>启动两个配置(已forever为例)
+eg: forever start app-service.js
+    forever start logger-service.js</p></li>
+</ol>
+
+<p>###########目录结构描述
+├── Readme.md                   // help
+├── app                         // 应用
+├── config                      // 配置
+│   ├── default.json
+│   ├── dev.json                // 开发环境
+│   ├── experiment.json         // 实验
+│   ├── index.js                // 配置控制
+│   ├── local.json              // 本地
+│   ├── production.json         // 生产环境
+│   └── test.json               // 测试环境
+├── data
+├── doc                         // 文档
+├── environment
+├── gulpfile.js
+├── locales
+├── logger-service.js           // 启动日志配置
+├── node_modules
+├── package.json
+├── app-service.js              // 启动应用配置
+├── static                      // web静态资源加载
+│   └── initjson
+│       └── config.js       // 提供给前端的配置
+├── test
+├── test-service.js
+└── tools</p>
+
+<p>###########V1.0.0 版本内容更新
+1. 新功能   aaaaaaaaa
+2. 新功能   bbbbbbbbb
+3. 新功能   ccccccccc
+4. 新功能   ddddddddd</p>
+
+        </div>
+
+        
+        
+        <div class="article-toc" >
+            <h3>Contents</h3>
+            <nav id="TableOfContents">
+<ul>
+<li><a href="#demo">DEMO</a></li>
+</ul>
+</nav>
+        </div>
+        
+        
+
+        
+
+
+        
+    </div>
+    <nav id="article-nav">
+    
+    
+</nav>
+
+</article>
+
+        
+    </section>
+    <footer id="footer">
+    <div class="outer">
+        <div id="footer-info" class="inner">
+            &copy; 2019 My New Hugo Site
+            <br />
+            Powered by <a href="https://gohugo.io" target="_blank">Hugo</a> with theme <a href="https://github.com/carsonip/hugo-theme-minos" target="_blank">Minos</a>
+        </div>
+    </div>
+    
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/styles/tomorrow-night.min.css" integrity="sha256-2wL88NKUqvJi/ExflDzkzUumjUM73mcK2gBvBBeLvTk=" crossorigin="anonymous" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/highlight.min.js" integrity="sha256-KbfTjB0WZ8vvXngdpJGY3Yp3xKk+tttbqClO11anCIU=" crossorigin="anonymous"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
+    
+    <script>
+        document.getElementById('main-nav-toggle').addEventListener('click', function () {
+            var header = document.getElementById('header');
+            if (header.classList.contains('mobile-on')) {
+                header.classList.remove('mobile-on');
+            } else {
+                header.classList.add('mobile-on');
+            }
+        });
+    </script>
+</footer>
+
+</div>
+</body>
+</html>
